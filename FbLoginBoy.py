@@ -9,7 +9,7 @@ password=input('Enter the password :')
 print(user_id)
 print(password)
 
-cd='C:\\webdrivers\\chromedriver.exe' #path to your chrome driver
+cd='C:\\Users\\hp\\Anaconda3\\chromedriver.exe' #path to your chrome driver
 
 
 browser= webdriver.Chrome(cd)
