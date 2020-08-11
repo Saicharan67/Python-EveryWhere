@@ -7,10 +7,17 @@ sleep(4)
 
 from selenium.webdriver.common.keys import Keys
 
-driver.find_element_by_xpath("//input[@name='username']").send_keys("<ENTER USER NAME>")
-driver.find_element_by_xpath("//input[@name='password']").send_keys( "<ENTER PASSWORD>")
+driver.find_element_by_xpath("//input[@name='username']").send_keys("<Enter user name>")
+driver.find_element_by_xpath("//input[@name='password']").send_keys( "<Enter password >")
 sleep(2)
 driver.find_element_by_xpath("//button[@type='submit']").click()
 
 sleep(10)
 
+driver.get("https://www.instagram.com/direct/inbox/")
+
+
+msg = driver.find_element_by_xpath("//textarea[@placeholder='Message...']")
+
+msg.click()
+msg.send_keys("hey baby")
