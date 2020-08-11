@@ -14,10 +14,5 @@ driver.find_element_by_xpath("//button[@type='submit']").click()
 
 sleep(10)
 
-driver.get("https://www.instagram.com/direct/inbox/")
 
 
-msg = driver.find_element_by_xpath("//textarea[@placeholder='Message...']")
-
-msg.click()
-msg.send_keys("hey baby")

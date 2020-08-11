@@ -33,4 +33,4 @@ for username, comment in zip(username_elems, comment_elems):
     df=df.append(item,ignore_index=True)
 
 uprint(df)
-# filename = 'C:/Users/hp/Desktop/commentlist.csv'
+#
