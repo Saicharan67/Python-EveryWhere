@@ -13,18 +13,20 @@ time.sleep(10)
 column_names=['Rank','Country', 'Total Cases', 'New Cases', 'Deaths', 'New Deaths','Recovered', 'Active Cases', 'Critical']
 df=pd.DataFrame(columns= column_names)
 print(df)
-
+p=0
 for i in chrome_browser.find_elements_by_xpath('//*[@id="main_table_countries_today"]/tbody/tr'): # tr for each of country
     td_list=i.find_elements_by_tag_name('td') # tag name retrieve each piece of info for a country
     row=[]
     for td in td_list:
-        row.append(td.text) # creating row ie each country data
+        row.append(td.get_attribute("textContent")) # creating row ie each country data
     data = {}
     for j in range(len(df.columns)):
-        data[df.columns[j]] = row[j] 
-    df = df.append(data, ignore_index=True)
+        data[df.columns[j]] = row[j]
+    if p not in [0,1,3,4,6,8]:
+      df = df.append(data, ignore_index=True)
+    p+=1
 
-df = df.iloc[1:]
+
 print(df)
 
 base_path='C:\\Users\\hp\\Desktop'
