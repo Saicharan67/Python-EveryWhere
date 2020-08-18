@@ -8,14 +8,14 @@ user_id=input("Enter the Email or Phone number: ")
 psd=input("Enter the Password: ")
 
 # locate email form by_id_name
-ep=browser.find_element_by_id(user_id)
+ep=browser.find_element_by_id("session_key")
 # send_keys() to simulate key strokes
-ep.send_keys(psd)
+ep.send_keys(user_id)
 
 # locate password form by_id_name
 pw=browser.find_element_by_id("session_password")
 # send_keys() to simulate key strokes
-pw.send_keys("<Enter password>")
+pw.send_keys(psd)
 
 sleep(5)
 # locate submit button by_class_name

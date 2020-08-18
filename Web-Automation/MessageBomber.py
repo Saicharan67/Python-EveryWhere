@@ -27,5 +27,5 @@ for i in range(n):
 	# click on resend otp
 	r=browser.find_element_by_link_text("Resend OTP")
 	r.click()
-    
+
 browser.quit()
