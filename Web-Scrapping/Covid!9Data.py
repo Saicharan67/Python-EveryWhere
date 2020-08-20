@@ -29,10 +29,10 @@ for i in chrome_browser.find_elements_by_xpath('//*[@id="main_table_countries_to
 
 print(df)
 
-base_path='C:\\Users\\hp\\Desktop'
+# base_path='C:\\Users\\hp\\Desktop'
 
-path=os.path.join(base_path,'Covid_Dataset_.csv')
-# os.mkdir(path)
-df.to_csv(path, index = False)
-print("The dataset has been saved at the loction: "+path)
-chrome_browser.quit()
+# path=os.path.join(base_path,'Covid_Dataset_.csv')
+# # os.mkdir(path)
+# df.to_csv(path, index = False)
+# print("The dataset has been saved at the loction: "+path)
+# chrome_browser.quit()

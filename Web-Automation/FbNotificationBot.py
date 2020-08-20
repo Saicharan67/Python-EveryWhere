@@ -1,4 +1,4 @@
-rom selenium import webdriver
+from selenium import webdriver
 import time
 import sys
 
@@ -29,7 +29,7 @@ time.sleep(10)			#wait for Page Loading
 
 #Take all notifications or exit program if login failure
 try:
-	notif_list = browser.find_elements_by_xpath("//*[@class='_4l_v']/span")
+	notif_list = browser.find_elements_by_xpath('//span[@class="a8c37x1j ni8dbmo4 stjgntxs l9j0dhe7 oi732d6d ik7dh3pa d2edcug0 qv66sw1b c1et5uql muag1w35 enqfppq2 jq4qci2q a3bd9o3v knj5qynh oo9gr5id hzawbc8m"]')
 except:
 	print("Account Not Found in facebook")
 	sys.exit()

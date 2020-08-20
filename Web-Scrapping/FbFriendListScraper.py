@@ -10,7 +10,7 @@ password=input('Enter the password :')
 print(user_id)
 print(password)
 
-cd='C:\\webdrivers\\chromedriver.exe'
+cd='C:\\Users\\hp\\Anaconda3\\chromedriver.exe'
 
 
 browser= webdriver.Chrome(cd)
@@ -28,11 +28,11 @@ login_box.click()                                                         # To c
 
 time.sleep(20)
 
-pro=browser.find_element_by_xpath('//a[@class="_2s25 _606w"]')
+pro=browser.find_element_by_xpath('//a[@class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 j83agx80 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys d1544ag0 qt6c0cv9 tw6a2znq i1ao9s8h esuyzwwr f1sip0of lzcic4wl l9j0dhe7 abiwlrkh p8dawk7l bp9cbjyn e72ty7fz qlfml3jp inkptoze qmr60zad btwxx1t3 tv7at329 taijpn5t"]')
 pro.click()
 
 time.sleep(4)
-fr=browser.find_element_by_xpath('//ul[@class="_6_7 clearfix"]/li[3]/a')
+fr=browser.find_element_by_xpath('//*[@class="oajrlxb2 g5ia77u1 qu0x051f esr5mh6w e9989ue4 r7d6kgcz rq0escxv nhd2j8a9 j83agx80 p7hjln8o kvgmc6g5 cxmmr5t8 oygrvhab hcukyx3x jb3vyjys rz4wbd8a qt6c0cv9 a8nywdso i1ao9s8h esuyzwwr f1sip0of lzcic4wl l9j0dhe7 abiwlrkh p8dawk7l dwo3fsh8 ow4ym5g4 auili1gw mf7ej076 gmql0nx0 g0qnabr5 tkr6xdv7"][3]')
 fr.click()
 
 while True:
@@ -46,14 +46,15 @@ while True:
     except:
         continue
 
-ps=browser.page_source
-soup=BeautifulSoup(ps,'html.parser')
 
-flist=soup.find('div',{'class':'_3i9'})
+
+
+f=browser.find_elements_by_xpath('//span[@class="oi732d6d ik7dh3pa d2edcug0 qv66sw1b c1et5uql a8c37x1j s89635nw ew0dbk1b a5q79mjw g1cxx5fr lrazzd5p oo9gr5id"]')
 
 friends=[]
-for i in flist.findAll('a'):
-    friends.append(i.text)
+for i in f:
+    x=i.get_attribute("textContent")
+    friends.append(x)
 
 
 
@@ -68,4 +69,4 @@ for name in friends:
     else:
         names_list.append(name)
 
-print(names_list)
+print(friends)
