@@ -7,7 +7,10 @@ uid = input("Enter Email or Phone No. - ")
 password = input("Enter Password - ")
 
 #open Google Chrome
-browser = webdriver.Chrome("C:\\Users\\hp\\Anaconda3\\chromedriver.exe")
+chrome_options =webdriver.ChromeOptions()
+prefs = {"profile.default_content_setting_values.notifications" : 2}
+chrome_options.add_experimental_option("prefs",prefs)
+browser = webdriver.Chrome("C:\\Users\\hp\\Anaconda3\\chromedriver.exe",options=chrome_options)
 browser.get("https://www.facebook.com/")
 
 #login to Facebook
