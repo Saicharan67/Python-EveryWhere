@@ -1,4 +1,4 @@
-# Python-Web-Automation
+# Python-EveryWhere
 Here You can find various web automation and web scraping techincs
 
 
