@@ -1,3 +1,5 @@
+#please be sure that all the apps are in root directory
+
 def system_operations():
     import pyttsx3 
     import os
