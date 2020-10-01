@@ -4,5 +4,8 @@ The purpose of detecting sharp changes/edges in image brightness is to capture i
 
 ##### Results
 
-###### Original image
+###### Original image:
 <img src="https://github.com/amoghatsunil/Python-EveryWhere/blob/master/Image_Processing/Canny_Edge_Detection/Images/download.jfif">
+
+###### Gaussian Image:
+<img src="https://github.com/amoghatsunil/Python-EveryWhere/blob/master/Image_Processing/Canny_Edge_Detection/Images/gaussian.png">
