@@ -12,3 +12,10 @@ The basic idea here is a straight line y=mx+b can be represented as a point (m,b
 • Conversion of infinite lines to finite lines.
 
 Results:
+
+### Lane detection:
+##### Input image
+<img src="https://github.com/amoghatsunil/Python-EveryWhere/blob/master/Image_Processing/Hough_Transform/images/road.jfif">
+
+##### Output image
+<img src="https://github.com/amoghatsunil/Python-EveryWhere/blob/master/Image_Processing/Hough_Transform/images/line_Detected.png">
