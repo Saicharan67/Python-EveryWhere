@@ -17,4 +17,7 @@ The purpose of detecting sharp changes/edges in image brightness is to capture i
 <img src="https://github.com/amoghatsunil/Python-EveryWhere/blob/master/Image_Processing/Canny_Edge_Detection/Images/sobely.png">
 
 ###### Gradient(sobel combined):
-<img src="https://github.com/amoghatsunil/Python-EveryWhere/blob/master/Image_Processing/Canny_Edge_Detection/Images/sobely.png">
+<img src="https://github.com/amoghatsunil/Python-EveryWhere/blob/master/Image_Processing/Canny_Edge_Detection/Images/gradient.png">
+
+###### Canny Edge Detected Image:
+<img src="https://github.com/amoghatsunil/Python-EveryWhere/blob/master/Image_Processing/Canny_Edge_Detection/Images/canny_edge_detection_output.png">
