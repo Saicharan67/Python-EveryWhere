@@ -11,9 +11,6 @@ Face detection is mostly done by using haarcascade classifier.The steps to do ar
 
 2.Loading the image and converting it into gray scale
 
-Input:
-
-()[C:\Users\admin\projects\Python-EveryWhere\Image_Processing\Face_detection\Images\harrypotter.jpg]
 
 The reason for this is gray channel is easy to process and is computationally less intensive as it contains only 1-channel of black-white.
 
@@ -40,6 +37,4 @@ putText takes following parameters
 5.color:rgb values
 6.fontScale:fontsize
 
-Output:
 
-()[C:\Users\admin\projects\Python-EveryWhere\Image_Processing\Face_detection\Images\Output.png]
