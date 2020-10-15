@@ -12,9 +12,9 @@ Finally combine the color image with edge mask produced.
 
 ### Input :
 
-[Images/building.jpg]
 
+<img src="Images/building.jpg" alt ="input">
 
 ### Output:
 
-[Images/CartoonImage.png]
+<img src="Images/CartoonImage.png" alt ="Output">
