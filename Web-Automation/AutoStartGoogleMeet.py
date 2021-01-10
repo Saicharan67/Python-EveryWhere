@@ -66,14 +66,14 @@ def openmeet():
     browser.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[1]/div[1]/div[3]/div[2]/div/div').click()
     browser.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[1]/div[1]/div[3]/div[1]/div/div/div').click()
     
-    # Clicking  join now
-    # time.sleep(5)
-    # join=browser.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div')
-    # join.click()
+    Clicking  join now
+    time.sleep(5)
+    join=browser.find_element_by_xpath('//*[@id="yDmH0d"]/c-wiz/div/div/div[4]/div[3]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div')
+    join.click()
 
 #sheduling every day to do task
 
-schedule.every().day.at("10:06").do(openmeet)
+schedule.every().day.at("12:03").do(openmeet)
 while True:
     schedule.run_pending()
 
